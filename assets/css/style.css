@@ -325,3 +325,8 @@ textarea {
 .button1:hover {
   background-color: rgba(108, 192, 145, 0.4);
 }
+
+::placeholder {
+  color: #fff;
+  opacity: 1;
+}
