@@ -104,10 +104,19 @@ header nav ul li a:hover {
 .Logo {
   text-decoration: none;
   color: #cdcdd6;
+  animation: example 1s infinite;
 }
 
-.Logo:hover {
-  color: #fff;
+@keyframes example {
+  0% {
+    color: #6cc091;
+  }
+  50% {
+    color: rgba(255, 255, 255, 0.55);
+  }
+  100% {
+    color: #6cc091;
+  }
 }
 
 .first {
@@ -179,6 +188,11 @@ header nav ul li a:hover {
 
 .round img {
   border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.round img:hover {
+  transform: scale(1.2);
 }
 
 .pb-30 {
@@ -316,6 +330,7 @@ textarea {
   white-space: nowrap;
   margin: 0px;
   margin-top: 38px;
+  margin-bottom: 50px;
 }
 
 .button2:hover {
@@ -329,4 +344,20 @@ textarea {
 ::placeholder {
   color: #fff;
   opacity: 1;
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8em;
+  margin: 0 0 2em 0;
+  padding: 0;
+}
+
+.copyright a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  color: white;
 }
